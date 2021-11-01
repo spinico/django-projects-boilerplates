@@ -6,7 +6,6 @@
 @import "~normalize.css/normalize";
 @import "icons";
 @import "fonts";
-@import "stars";
 @import "switch";
 
 $blue: rgb(0, 162, 201);
@@ -50,13 +49,6 @@ h1 {
 .header {
   background-color: $blue;
   padding: 0;
-}
-
-.hero {
-  background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
-  position: relative;
-  padding: 15% 0 0 0;
-  clip-path: inset(0% 0% 0% 0%);
 }
 
 .content {

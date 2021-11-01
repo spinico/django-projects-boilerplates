@@ -17,7 +17,6 @@ __pycache__
 /build
 /media
 /static
-/settings/*.key
 /temp
 
 # Editor configurations
