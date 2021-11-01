@@ -1,13 +1,13 @@
 {
-  "python.venvPath": "${workspaceFolder}\\..",
+  "python.venvPath": "${workspaceFolder}",
   "python.venvFolders": [".venv"],
-  "python.pythonPath": "${workspaceFolder}\\..\\.venv\\Scripts\\python.exe",
-  "python.interpreterPath": "${workspaceFolder}\\..\\.venv\\Scripts\\python.exe",
+  "python.pythonPath": "${workspaceFolder}/.venv/Scripts/python",
+  "python.interpreterPath": "${workspaceFolder}/.venv/Scripts/python",
   // Set to false to enable Microsoft Python Language Server
   "python.jediEnabled": true,
   // Fix "unresolved imports" error when using Microsoft Python Language Server
-  "python.autoComplete.extraPaths": ["..\\..\\apps"],
-  // Silence remaining unresolved import
+  "python.autoComplete.extraPaths": ["../../apps"],
+  // Uncomment to silence remaining unresolved import
   //"python.analysis.disabled": ["unresolved-import"],
   "files.associations": {
     "**/templates/*.html": "django-html",
@@ -37,7 +37,7 @@
     "editor.rulers": [80, 120]
   },
   "[django-html]": {
-    "editor.rulers": [120]
+    "editor.rulers": [120],
     "editor.formatOnSave": false
   },
   "[javascript]": {

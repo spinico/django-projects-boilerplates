@@ -1,8 +1,9 @@
 # Do not include the generation scripts
 *.bat
 
-# Exclude common assets folder
+# Exclude common assets and archives folders
 /@assets
+/@archives
 
 # Exclude virtual environment folder
 /.venv
