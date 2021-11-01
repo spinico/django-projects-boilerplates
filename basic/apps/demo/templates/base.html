@@ -1,0 +1,37 @@
+{% spaceless %}
+{% load analytical %}
+{% load static %}
+{% load django_simple_cookie_consent_tags %}
+
+<!doctype html>
+
+<html>
+ <head>
+   {% analytical_head_top %}
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <title>basic | {{ title }}</title>
+   <link href="{% static 'favicon.ico' %}" rel="icon" type="image/x-icon">
+
+   <link href="{% static 'styles/app.css' %}" rel="stylesheet" type="text/css">
+   {% analytical_head_bottom %}
+   {% display_cookie_consent %}
+ </head>
+
+ <body>
+   {% analytical_body_top %}
+   <div class="header">{% block header %}{% endblock %}</div>
+   <div class="hero">{% block hero %}{% endblock %}</div>
+   <div class="content">{% block content %}{% endblock %}</div>
+   <div class="scroller">{% block scroller %}{% endblock %}</div>
+   <div class="footer">{% block footer %}{% endblock %}</div>
+
+   <script src="{% static 'vendors.js' %}"></script>
+   <script src="{% static 'app.js' %}"></script>
+   {% analytical_body_bottom %}
+ </body>
+</html>
+{% endspaceless %}

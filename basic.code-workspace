@@ -1,0 +1,20 @@
+{
+  "settings": {
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "workbench.editor.labelFormat": "medium",
+    "workbench.colorCustomizations": {
+      "editorRuler.foreground": "#276679"
+    },
+    "files.associations": {
+      "*.html": "django-html"
+    },
+    "python.interpreterPath": "${workspaceFolder}\\..\\.venv\\Scripts\\python.exe",
+  },
+  "folders": [
+    {
+      "name": "basic",
+      "path": "./basic"
+    }
+  ]
+}
