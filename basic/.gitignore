@@ -1,0 +1,27 @@
+# Python bytecode
+__pycache__
+
+# Log files
+*.log
+
+# Database files
+.sqlite3
+.db
+
+# Environment variables
+.env
+.env.*
+
+# Static files
+/node_modules
+/build
+/media
+/static
+/settings/*.key
+/temp
+
+# Editor configurations
+.vscode/chrome
+.idea
+*.suo
+*.sln

@@ -1,0 +1,107 @@
+// SPDX-License-Identifier: MIT
+
+@charset "utf-8";
+
+@import "breakpoints";
+@import "~normalize.css/normalize";
+@import "icons";
+@import "fonts";
+@import "stars";
+@import "switch";
+
+$blue: rgb(0, 162, 201);
+$gray: rgb(245, 245, 245);
+$green: rgb(52, 255, 154);
+
+$content_padding: 5%;
+
+// Minimal reset style
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-y: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  color: deeppink;
+}
+
+h1 {
+  color: $gray;
+  text-align: center;
+
+  &:hover {
+    color: $green;
+    cursor: pointer;
+  }
+}
+
+.header {
+  background-color: $blue;
+  padding: 0;
+}
+
+.hero {
+  background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
+  position: relative;
+  padding: 15% 0 0 0;
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+.content {
+  font-size: 1.2em;
+  padding: $content_padding;
+  text-align: justify;
+  flex: 1 0 auto;
+}
+
+.show {
+  transition: opacity 800ms;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.hide-navbar-background {
+  background: rgba(0, 0, 0, 0);
+  transition: background 400ms;
+}
+
+.show-navbar-background {
+  background: rgba(0, 0, 0, 0.9);
+  transition: background 400ms;
+}
+
+#logo {
+  width: 48px;
+  height: 48px;
+  min-width: 48px; // Force a fixed width
+  margin: 0 10px 0 5px;
+  padding-bottom: 10px;
+  background: url("../images/logo.svg");
+  background-size: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#lorem {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#theme-switch {
+  margin: 15px 0;
+}
