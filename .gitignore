@@ -1,6 +1,9 @@
 # Do not include the generation scripts
 *.bat
 
+# Do not include SQLite database file
+*.sqlite3
+
 # Exclude common assets and archives folders
 /@assets
 /@archives
