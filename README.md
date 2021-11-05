@@ -2,6 +2,11 @@
 
 Django projects templates.
 
+- LiveReload development server
+- SQLite database
+- Webpack 5 setup for development and production builds
+- Deployment with Whitenoise for hashing and compression
+
 Remark: The project(s) contains Visual Studio Code settings with preconfigured tasks and launchers 
 
 ## Basic project
@@ -28,13 +33,17 @@ Remark: The project(s) contains Visual Studio Code settings with preconfigured t
 
 	npm install --loglevel=error
 
-6) Modify the secret key in files `settings/development.key` and `settings/production.key`
+6) Modify the default secret keys in files `settings/development.key` and `settings/production.key`
 	
 **Note:** you can generate a random secret key using the following python command.
 
 	".venv\Scripts\python" -c "import random, string; print("""".join([random.SystemRandom().choice(""{}{}{}"".format(string.ascii_letters, string.digits, string.punctuation)) for i in range(50)]))"
 
-7) Open the project in Visual Studio Code and launch a debug session.
+7) Apply migrations to create the required SQLite database tables
+
+	".venv/Scripts/python" manage.py migrate
+
+8) Open the project in Visual Studio Code and launch a debug session.
 
 Note: a version of Chrome browser should be installed on the system. 
 
