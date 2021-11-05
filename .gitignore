@@ -10,3 +10,6 @@
 
 # Exclude virtual environment folder
 /.venv
+
+# Exclude report file from root
+/report.html
