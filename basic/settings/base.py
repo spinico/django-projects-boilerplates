@@ -126,6 +126,10 @@ LANGUAGES = (
 
 LOGS_ROOT = os.path.realpath(os.path.join(BACKEND_DIR, 'logs'))
 
+# Create logs directory if not found
+if not os.path.exists(LOGS_ROOT):
+    os.makedirs(LOGS_ROOT)
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
